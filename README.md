@@ -47,7 +47,10 @@ Example setup:
 
 ```
 SITE_DIR=./website
-SITE_LIST_FILE=file-list.txt
+SITE_FILE_LIST=file-list.txt
+EXTERNAL_ORIGIN_LIST=external-origin-list.txt
+EXTERNAL_FILE_LIST=external-file-list.txt
+DEFAULT_EXTERNAL_ORIGIN_STATUS=new
 CLONE_URL=https://example.net/
 SCROLL_IN_DETAIL=false
 ```
