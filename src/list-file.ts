@@ -16,7 +16,7 @@ export class ListFile<Status extends string> {
     },
   ) {
     let status = options.possible_status_list
-    this.listFileHeader = `# possible status: ${status.join(', ')}`
+    this.listFileHeader = `# possible statuses (edit this file to update): ${status.join(', ')}`
     let res = this.loadItemsFromFile()
     this.items = res?.items || []
     if (!res?.isHeaderMatched) {

@@ -94,7 +94,7 @@ export async function scanWeb(options: {
       )
       console.log(
         newExternalOrigins.length,
-        'new external origin(s), please review them in file:',
+        'new external origin(s), please review and update them in file:',
         options.externalOriginListFile,
       )
       await page.close()
@@ -107,7 +107,7 @@ export async function scanWeb(options: {
   if (newFiles.length > 0) {
     console.log(
       newFiles.length,
-      'new page link(s), please review them in file:',
+      'new page link(s), please review and update them in file:',
       options.siteFileListFile,
     )
   } else {
